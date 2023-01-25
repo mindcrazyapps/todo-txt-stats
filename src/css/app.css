@@ -1,0 +1,18 @@
+#uploadForm{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+input.btn{
+    flex: 0.8;
+}
+button.btn{
+    flex: 0.15;
+}
+.chart-container {
+    position: absolute;
+   /*relative*/
+    margin: auto;
+    height: 250px;
+    width: 500px;
+}

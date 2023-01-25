@@ -10,6 +10,11 @@ const { readFileSync } = require('fs')
 const path = require('path');
 const directoryPath = path.join(__dirname, '../data'); //joining path of directory 
 const app = express();
+app.use(express.static('public'))
+app.use(express.static('js'))
+app.use(express.static('css'))
+app.use('/css', express.static('public'))
+app.use('/js', express.static('public'))
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.set('view engine', 'pug'); //ejs
@@ -56,9 +61,7 @@ app.post('/upload', function (req, res, next) {
                                 console.error(err);
                                 return;
                               } 
-                            //res.render('index', {dataFileUpload: JSON.stringify(parser.relaxed(data)), tagline: tagline});
-                            ejsData = JSON.stringify(parser.relaxed(data))
-                            res.render('index', {ejsData: "file content"+ejsData})
+                            res.render('index', {ejsData: "file content"+JSON.stringify(parser.relaxed(data))})
                             //res.render('index', { dataFileUpload:  });
                           }); //console.log(parse(todo)); //res.end("Upload completed."+JSON.stringify(parser.relaxed(data)));
                     }
