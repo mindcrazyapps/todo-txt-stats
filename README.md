@@ -327,16 +327,16 @@ Copy-paste this code into your readme and change the links.
 Endpoint: `api/pin?upload/&`
 
 ```md
-[![Readme Card](https:/.netlify.app/api/pin/?upload/&)](https://github.com/nextexperience/)
+[![Readme Card](https://todo-txt-stats.netlify.app/api/pin/?upload/&)](https://github.com/nextexperience/)
 ```
 
 ### Demo
 
-[![Readme Card](https:/.netlify.app/api/pin/?upload/&)](https://github.com/nextexperience/)
+[![Readme Card](https://todo-txt-stats.netlify.app/api/pin/?upload/&)](https://github.com/nextexperience/)
 
 Use [show_owner](#customization) variable to include the repo's owner upload
 
-[![Readme Card](https:/.netlify.app/api/pin/?upload/&&show_owner=true)](https://github.com/nextexperience/)
+[![Readme Card](https://todo-txt-stats.netlify.app/api/pin/?upload/&&show_owner=true)](https://github.com/nextexperience/)
 
 # Top Languages Card
 
@@ -352,7 +352,7 @@ Copy-paste this code into your readme and change the links.
 Endpoint: `api/top-langs?upload/`
 
 ```md
-[![Top Langs](https:/.netlify.app/api/top-langs/?upload/)](https://github.com/nextexperience/)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/)](https://github.com/nextexperience/)
 ```
 
 ### Exclude individual repositories
@@ -360,7 +360,7 @@ Endpoint: `api/top-langs?upload/`
 You can use the `&exclude_repo=repo1,repo2` parameter to exclude individual repositories.
 
 ```md
-[![Top Langs](https:/.netlify.app/api/top-langs/?upload/&exclude_,filepath.github.io)](https://github.com/nextexperience/)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&exclude_,filepath.github.io)](https://github.com/nextexperience/)
 ```
 
 ### Hide individual languages
@@ -368,7 +368,7 @@ You can use the `&exclude_repo=repo1,repo2` parameter to exclude individual repo
 You can use `&hide=language1,language2` parameter to hide individual languages.
 
 ```md
-[![Top Langs](https:/.netlify.app/api/top-langs/?upload/&hide=contexts, projects)](https://github.com/nextexperience/)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&hide=contexts, projects)](https://github.com/nextexperience/)
 ```
 
 ### Show more languages
@@ -376,7 +376,7 @@ You can use `&hide=language1,language2` parameter to hide individual languages.
 You can use the `&context_count=` option to increase or decrease the number of languages shown on the card. Valid values are integers between 1 and 10 (inclusive), and the default is 5.
 
 ```md
-[![Top Langs](https:/.netlify.app/api/top-langs/?upload/&context_count=8)](https://github.com/nextexperience/)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&context_count=8)](https://github.com/nextexperience/)
 ```
 
 ### Compact Language Card Layout
@@ -384,23 +384,23 @@ You can use the `&context_count=` option to increase or decrease the number of l
 You can use the `&layout=compact` option to change the card design.
 
 ```md
-[![Top Langs](https:/.netlify.app/api/top-langs/?upload/&layout=compact)](https://github.com/nextexperience/)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&layout=compact)](https://github.com/nextexperience/)
 ```
 
 ### Demo
 
-[![Top Langs](https:/.netlify.app/api/top-langs/?upload/)](https://github.com/nextexperience/)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/)](https://github.com/nextexperience/)
 
 -   Compact layout
 
-[![Top Langs](https:/.netlify.app/api/top-langs/?upload/&layout=compact)](https://github.com/nextexperience/)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&layout=compact)](https://github.com/nextexperience/)
 
 # Wakatime Week Stats
 
 Change the `?upload=` value to your [Wakatime](https://wakatime.com) upload.
 
 ```md
-[![willianrod's wakatime stats](https:/.netlify.app/api/wakatime?upload=willianrod)](https://github.com/nextexperience/)
+[![willianrod's wakatime stats](https://todo-txt-stats.netlify.app/api/wakatime?upload=willianrod)](https://github.com/nextexperience/)
 ```
 
 > **Note**:
@@ -408,13 +408,13 @@ Change the `?upload=` value to your [Wakatime](https://wakatime.com) upload.
 
 ### Demo
 
-[![willianrod's wakatime stats](https:/.netlify.app/api/wakatime?upload=willianrod)](https://github.com/nextexperience/)
+[![willianrod's wakatime stats](https://todo-txt-stats.netlify.app/api/wakatime?upload=willianrod)](https://github.com/nextexperience/)
 
-[![willianrod's wakatime stats](https:/.netlify.app/api/wakatime?upload=willianrod&hide_progress=true)](https://github.com/nextexperience/)
+[![willianrod's wakatime stats](https://todo-txt-stats.netlify.app/api/wakatime?upload=willianrod&hide_progress=true)](https://github.com/nextexperience/)
 
 -   Compact layout
 
-[![willianrod's wakatime stats](https:/.netlify.app/api/wakatime?upload=willianrod&layout=compact)](https://github.com/nextexperience/)
+[![willianrod's wakatime stats](https://todo-txt-stats.netlify.app/api/wakatime?upload=willianrod&layout=compact)](https://github.com/nextexperience/)
 
 * * *
 
@@ -452,23 +452,23 @@ Choose from any of the [default themes](#themes)
 
 -   Customizing stats card
 
-![NextExperience Todo stats](https:/.netlify.app/api/?upload/&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api/?upload/&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
 
 -   Setting card locale
 
-![NextExperience Todo stats](https:/.netlify.app/api/?upload/&locale=es)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api/?upload/&locale=es)
 
 -   Customizing repo card
 
-![Customized Card](https:/.netlify.app/api/pin?upload/&&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
+![Customized Card](https://todo-txt-stats.netlify.app/api/pin?upload/&&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
 
 -   Top languages
 
-[![Top Langs](https:/.netlify.app/api/top-langs/?upload/)](https://github.com/nextexperience/)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/)](https://github.com/nextexperience/)
 
 -   WakaTime card
 
-[![willianrod's wakatime stats](https:/.netlify.app/api/wakatime?upload=willianrod)](https://github.com/nextexperience/)
+[![willianrod's wakatime stats](https://todo-txt-stats.netlify.app/api/wakatime?upload=willianrod)](https://github.com/nextexperience/)
 
 * * *
 
@@ -478,10 +478,10 @@ By default, GitHub does not lay out the cards side by side. To do that, you can 
 
 ```html
 <a href="https://github.com/nextexperience/">
-  <img align="center" src="https:/.netlify.app/api/pin/?upload/&" />
+  <img align="center" src="https://todo-txt-stats.netlify.app/api/pin/?upload/&" />
 </a>
 <a href="https://github.com/nextexperience//convoychat">
-  <img align="center" src="https:/.netlify.app/api/pin/?upload/&repo=convoychat" />
+  <img align="center" src="https://todo-txt-stats.netlify.app/api/pin/?upload/&repo=convoychat" />
 </a>
 ```
 
@@ -492,7 +492,7 @@ By default, GitHub does not lay out the cards side by side. To do that, you can 
 > **Warning**
 > If you are on the [hobby (i.e. free)](https://netlify.com/pricing) netlify plan, please make sure you change the `maxDuration` parameter in the [netlify.json](https://github.com/nextexperience//blob/master/netlify.json) file from `30` to `10` (see [#1416](https://github.com/nextexperience//issues/1416#issuecomment-950275476) for more information).
 
-Since the GitHub API only allows 5k requests per hour, my `https:/.netlify.app/api` could possibly hit the rate limiter. If you host it on your own netlify server, then you do not have to worry about anything. Click on the deploy button to get started!
+Since the GitHub API only allows 5k requests per hour, my `https://todo-txt-stats.netlify.app/api` could possibly hit the rate limiter. If you host it on your own netlify server, then you do not have to worry about anything. Click on the deploy button to get started!
 
 > **Note**
 > Since [#58](https://github.com/nextexperience//pull/58), we should be able to handle more than 5k requests and have fewer issues with downtime :grin:.
