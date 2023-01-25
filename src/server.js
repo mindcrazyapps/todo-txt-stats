@@ -1,7 +1,7 @@
 //requiring path and fs modules etc
 const express = require('express');
 const multer  = require('multer');
-const ejs = require('ejs');
+//const ejs = require('ejs');
 const fs  = require('fs');
 const bodyParser = require('body-parser');
 const parser = require("todotxt-parser");
