@@ -56,13 +56,11 @@ app.post('/upload', function (req, res, next) {
                         const filepathnew = directoryPath+"/"+filenamepath;
                         fs.readFile(filepathnew, {encoding: 'UTF-8'}, (err, data) => {
                             const todo = readFileSync(filepathnew, 'utf8').trim(); // '../app/uploads/todo.txt'
-                            var ejsData;
                             if (err) { // or if (err) throw err;
                                 console.error(err);
                                 return;
                               } 
-                            res.render('index', {ejsData: JSON.stringify(parser.relaxed(data))})
-                            //res.render('index', { dataFileUpload:  });
+                            res.render('index', {dataFileUpload: JSON.stringify(parser.relaxed(data))})
                           }); //console.log(parse(todo)); //res.end("Upload completed."+JSON.stringify(parser.relaxed(data)));
                     }
                     else {
