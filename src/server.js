@@ -12,7 +12,7 @@ const directoryPath = path.join(__dirname, '../data'); //joining path of directo
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.set('view engine', 'ejs');
+app.set('view engine', 'pug'); //ejs
 app.get('/', (req, res) => {
     res.render('index');
 });
@@ -50,12 +50,15 @@ app.post('/upload', function (req, res, next) {
                         const filepathnew = directoryPath+"/"+filenamepath;
                         fs.readFile(filepathnew, {encoding: 'UTF-8'}, (err, data) => {
                             const todo = readFileSync(filepathnew, 'utf8').trim(); // '../app/uploads/todo.txt'
+                            var ejsData;
                             if (err) { // or if (err) throw err;
                                 console.error(err);
                                 return;
                               } 
                             //res.render('index', {dataFileUpload: JSON.stringify(parser.relaxed(data)), tagline: tagline});
-                            res.render('index', { dataFileUpload:  JSON.stringify(parser.relaxed(data))});
+                            ejsData = JSON.stringify(parser.relaxed(data))
+                            res.render('index', {ejsData: ejsData})
+                            //res.render('index', { dataFileUpload:  });
                           }); //console.log(parse(todo)); //res.end("Upload completed."+JSON.stringify(parser.relaxed(data)));
                     }
                     else {
