@@ -41,3 +41,7 @@ app
 ./app/uploads/
 app/
 app
+./package-lock.json
+/package-lock.json
+./yarn.lock
+yarn.lock 

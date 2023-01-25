@@ -3,10 +3,10 @@ const multer  = require('multer');
 const fs  = require('fs');
 const { parse } = require('@lggruspe/todo-txt-parser');
 const { readFileSync } = require('fs')
-const todo = readFileSync('../app/uploads/todo.txt', 'utf8').trim()
-const tasks = parse(todo);
-const parser = require("todotxt-parser");
-const tasks1 = parser.relaxed("x 2014-07-04 (A) 2014-06-19 Document YTD spending on +SocialEvents for @Alex due:2014-08-01");
+//const todo = readFileSync('../app/uploads/todo.txt', 'utf8').trim()
+//const tasks = parse(todo);
+//const parser = require("todotxt-parser");
+//const tasks1 = parser.relaxed("x 2014-07-04 (A) 2014-06-19 Document YTD spending on +SocialEvents for @Alex due:2014-08-01");
 
 const app = express();
 
