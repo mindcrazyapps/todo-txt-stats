@@ -54,7 +54,8 @@ app.post('/upload', function (req, res, next) {
                                 console.error(err);
                                 return;
                               } 
-                            res.render('index', {dataFileUpload: JSON.stringify(parser.relaxed(data)), tagline: tagline});
+                            //res.render('index', {dataFileUpload: JSON.stringify(parser.relaxed(data)), tagline: tagline});
+                            res.render('index', { dataFileUpload:  JSON.stringify(parser.relaxed(data))});
                           }); //console.log(parse(todo)); //res.end("Upload completed."+JSON.stringify(parser.relaxed(data)));
                     }
                     else {
