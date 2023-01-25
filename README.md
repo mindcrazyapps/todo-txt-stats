@@ -52,6 +52,12 @@
 </p>
 
 # Screenshot
+![image](https://user-images.githubusercontent.com/123137817/214712029-f32f59d6-3cfa-4203-af81-4ab75448a333.png)
+
+![image](https://user-images.githubusercontent.com/123137817/214711957-e1b33da9-32dc-464b-900d-2999173c3ec1.png)
+
+![image](https://user-images.githubusercontent.com/123137817/214711975-7a0c3905-63e5-40fc-b200-99adc370cf1b.png)
+
 ![image](https://user-images.githubusercontent.com/123137817/214711824-d4c49ecc-e36a-4977-88d3-03c454a41012.png)
 
 # Features
