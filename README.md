@@ -48,6 +48,21 @@
 
 </p>
 
+# Interface
+
+```typescript
+interface Task {
+  completed?: boolean
+  priority?: string
+  completion?: string
+  creation?: string
+  description?: string
+  projects?: Array<string>
+  contexts?: Array<string>
+  pairs?: Array<[string, string]>
+}
+```
+
 # Screenshot
 
 *img 1*
