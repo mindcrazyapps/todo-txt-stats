@@ -557,24 +557,6 @@ Made with :heart: and JavaScript.
 
 </p>
 
-
-# Related projects
-- https://github.com/Majidkn/nodejs-simple-file-upload
-- https://github.com/anuraghazra/github-readme-stats
-- https://github.com/topics/readme-stats
-- https://github.com/DenverCoder1/github-readme-streak-stats
-- https://github.com/avgupta456/github-trends
-- https://github.com/tandpfun/skill-icons
-- https://github.com/topics/todotxt?o=asc&s=forks
-- https://github.com/pratikborsadiya/vali-admin
-- https://github.com/pratikborsadiya/vali-admin/blob/master/src/pug/charts.pug
-- https://github.com/LimberDuck/converter-csv
-
-# Dependencies
-- https://github.com/csauve/todotxt-parser
-- https://www.chartjs.org/docs/latest/getting-started/
-- https://github.com/lggruspe/todo-txt-parser
-
 # About NextExperience
 
 <img align="right" width="120" height="120" src="https://cdn-icons-png.flaticon.com/512/1600/1600856.png" hspace="50">
