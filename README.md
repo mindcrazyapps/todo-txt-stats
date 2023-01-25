@@ -11,9 +11,6 @@
 </p>
 
   <p align="center">
-    <a href="https://github.com/mindcrazyapps/todo-txt-stats/actions">
-      <img alt="Tests Passing" src="https://github.com/mindcrazyapps//workflows/Test/badge.svg" />
-    </a>
     <a href="https://github.com/mindcrazyapps/todo-txt-stats/graphs/contributors">
       <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/mindcrazyapps/todo-txt-stats" />
     </a>
