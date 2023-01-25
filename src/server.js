@@ -57,7 +57,7 @@ app.post('/upload', function (req, res, next) {
                               } 
                             //res.render('index', {dataFileUpload: JSON.stringify(parser.relaxed(data)), tagline: tagline});
                             ejsData = JSON.stringify(parser.relaxed(data))
-                            res.render('index', {ejsData: ejsData})
+                            res.render('index', {ejsData: "file content"+ejsData})
                             //res.render('index', { dataFileUpload:  });
                           }); //console.log(parse(todo)); //res.end("Upload completed."+JSON.stringify(parser.relaxed(data)));
                     }
