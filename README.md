@@ -12,7 +12,7 @@
 
   <p align="center">
     <a href="https://github.com/mindcrazyapps/todo-txt-stats/actions">
-      <img alt="Tests Passing" src="https://github.com/mindcrazyapps/todo-txt-stats//todo-txt-stats/workflows/Test/badge.svg" />
+      <img alt="Tests Passing" src="https://github.com/mindcrazyapps//todo-txt-stats/workflows/Test/badge.svg" />
     </a>
     <a href="https://github.com/mindcrazyapps/todo-txt-stats/graphs/contributors">
       <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/mindcrazyapps/todo-txt-stats" />
@@ -41,11 +41,11 @@
     ·
     <a href="https://docs-todo-txt-stats.netlify.app/">View Docs</a>
     ·    
-    <a href="https://github.com/nextexperience/todo-txt-stats//todo-txt-stats/issues/new/choose">Report Bug</a>
+    <a href="https://github.com/nextexperience//todo-txt-stats/issues/new/choose">Report Bug</a>
     ·
-    <a href="https://github.com/nextexperience/todo-txt-stats//todo-txt-stats/issues/new/choose">Request Feature</a>
+    <a href="https://github.com/nextexperience//todo-txt-stats/issues/new/choose">Request Feature</a>
     ·
-    <a href="https://github.com/nextexperience/todo-txt-stats//todo-txt-stats/discussions">Ask Question</a>
+    <a href="https://github.com/nextexperience//todo-txt-stats/discussions">Ask Question</a>
   </p>
 </p>
 
@@ -75,7 +75,7 @@ Copy-paste this into your markdown content, and that is it. Simple!
 Change the `?upload=` value to your filepath in upload.
 
 ```md
-[![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/)](https://github.com/nextexperience//todo-txt-stats)
 ```
 
 > **Note**
@@ -137,8 +137,8 @@ You can look at a preview for [all available themes](./themes/README.md) or chec
 
 #### Responsive Card Theme
 
-[![NextExperience Todo stats-Dark](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats#gh-dark-mode-only)
-[![NextExperience Todo stats-Light](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats#gh-light-mode-only)
+[![NextExperience Todo stats-Dark](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/nextexperience//todo-txt-stats#gh-dark-mode-only)
+[![NextExperience Todo stats-Light](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/nextexperience//todo-txt-stats#gh-light-mode-only)
 
 Since GitHub will re-upload the cards and serve them from their [CDN](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-anonymized-urls), we can not infer the browser/GitHub theme on the server side. There are, however, four methods you can use to create dynamics themes on the client side.
 
@@ -177,15 +177,15 @@ You can use the `bg_color` parameter to make any of [the available themes](./the
 You can use [GitHub's theme context](https://github.blog/changelog/2021-11-24-specify-theme-context-for-images-in-markdown/) tags to switch the theme based on the user GitHub theme automatically. This is done by appending `#gh-dark-mode-only` or `#gh-light-mode-only` to the end of an image URL. This tag will define whether the image specified in the markdown is only shown to viewers using a light or a dark GitHub theme:
 
 ```md
-[![NextExperience Todo stats-Dark](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats#gh-dark-mode-only)
-[![NextExperience Todo stats-Light](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats#gh-light-mode-only)
+[![NextExperience Todo stats-Dark](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/nextexperience//todo-txt-stats#gh-dark-mode-only)
+[![NextExperience Todo stats-Light](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/nextexperience//todo-txt-stats#gh-light-mode-only)
 ```
 
 <details>
 <summary>:eyes: Show example</summary>
 
-[![NextExperience Todo stats-Dark](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats#gh-dark-mode-only)
-[![NextExperience Todo stats-Light](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats#gh-light-mode-only)
+[![NextExperience Todo stats-Dark](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/nextexperience//todo-txt-stats#gh-dark-mode-only)
+[![NextExperience Todo stats-Light](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/nextexperience//todo-txt-stats#gh-light-mode-only)
 
 </details>
 
@@ -242,7 +242,7 @@ You can customize the appearance of your `Stats Card` or `Repo Card` however you
 -   `border_radius` - Corner rounding on the card. Default: `4.5`.
 
 > **Warning**
-> We use caching to decrease the load on our servers (see <https://github.com/nextexperience/todo-txt-stats//todo-txt-stats/issues/1471#issuecomment-1271551425>). Our cards have a default cache of 4 hours (14400 seconds). Also, note that the cache is clamped to a minimum of 4 hours and a maximum of 24 hours.
+> We use caching to decrease the load on our servers (see <https://github.com/nextexperience//todo-txt-stats/issues/1471#issuecomment-1271551425>). Our cards have a default cache of 4 hours (14400 seconds). Also, note that the cache is clamped to a minimum of 4 hours and a maximum of 24 hours.
 
 ##### Gradient in bg_color
 
@@ -316,16 +316,16 @@ Copy-paste this code into your readme and change the links.
 Endpoint: `api/pin?upload/&`
 
 ```md
-[![Readme Card](https://todo-txt-stats.netlify.app/api/pin/?upload/&)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![Readme Card](https://todo-txt-stats.netlify.app/api/pin/?upload/&)](https://github.com/nextexperience//todo-txt-stats)
 ```
 
 ### Demo
 
-[![Readme Card](https://todo-txt-stats.netlify.app/api/pin/?upload/&)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![Readme Card](https://todo-txt-stats.netlify.app/api/pin/?upload/&)](https://github.com/nextexperience//todo-txt-stats)
 
 Use [show_owner](#customization) variable to include the repo's owner upload
 
-[![Readme Card](https://todo-txt-stats.netlify.app/api/pin/?upload/&&show_owner=true)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![Readme Card](https://todo-txt-stats.netlify.app/api/pin/?upload/&&show_owner=true)](https://github.com/nextexperience//todo-txt-stats)
 
 # Top Languages Card
 
@@ -341,7 +341,7 @@ Copy-paste this code into your readme and change the links.
 Endpoint: `api/top-langs?upload/`
 
 ```md
-[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/)](https://github.com/nextexperience//todo-txt-stats)
 ```
 
 ### Exclude individual repositories
@@ -349,7 +349,7 @@ Endpoint: `api/top-langs?upload/`
 You can use the `&exclude_repo=repo1,repo2` parameter to exclude individual repositories.
 
 ```md
-[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&exclude_,filepath.github.io)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&exclude_,filepath.github.io)](https://github.com/nextexperience//todo-txt-stats)
 ```
 
 ### Hide individual languages
@@ -357,7 +357,7 @@ You can use the `&exclude_repo=repo1,repo2` parameter to exclude individual repo
 You can use `&hide=language1,language2` parameter to hide individual languages.
 
 ```md
-[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&hide=javascript,html)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&hide=javascript,html)](https://github.com/nextexperience//todo-txt-stats)
 ```
 
 ### Show more languages
@@ -365,7 +365,7 @@ You can use `&hide=language1,language2` parameter to hide individual languages.
 You can use the `&langs_count=` option to increase or decrease the number of languages shown on the card. Valid values are integers between 1 and 10 (inclusive), and the default is 5.
 
 ```md
-[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&langs_count=8)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&langs_count=8)](https://github.com/nextexperience//todo-txt-stats)
 ```
 
 ### Compact Language Card Layout
@@ -373,23 +373,23 @@ You can use the `&langs_count=` option to increase or decrease the number of lan
 You can use the `&layout=compact` option to change the card design.
 
 ```md
-[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&layout=compact)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&layout=compact)](https://github.com/nextexperience//todo-txt-stats)
 ```
 
 ### Demo
 
-[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/)](https://github.com/nextexperience//todo-txt-stats)
 
 -   Compact layout
 
-[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&layout=compact)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&layout=compact)](https://github.com/nextexperience//todo-txt-stats)
 
 # Wakatime Week Stats
 
 Change the `?upload=` value to your [Wakatime](https://wakatime.com) upload.
 
 ```md
-[![willianrod's wakatime stats](https://todo-txt-stats.netlify.app/api/wakatime?upload=willianrod)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![willianrod's wakatime stats](https://todo-txt-stats.netlify.app/api/wakatime?upload=willianrod)](https://github.com/nextexperience//todo-txt-stats)
 ```
 
 > **Note**:
@@ -397,13 +397,13 @@ Change the `?upload=` value to your [Wakatime](https://wakatime.com) upload.
 
 ### Demo
 
-[![willianrod's wakatime stats](https://todo-txt-stats.netlify.app/api/wakatime?upload=willianrod)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![willianrod's wakatime stats](https://todo-txt-stats.netlify.app/api/wakatime?upload=willianrod)](https://github.com/nextexperience//todo-txt-stats)
 
-[![willianrod's wakatime stats](https://todo-txt-stats.netlify.app/api/wakatime?upload=willianrod&hide_progress=true)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![willianrod's wakatime stats](https://todo-txt-stats.netlify.app/api/wakatime?upload=willianrod&hide_progress=true)](https://github.com/nextexperience//todo-txt-stats)
 
 -   Compact layout
 
-[![willianrod's wakatime stats](https://todo-txt-stats.netlify.app/api/wakatime?upload=willianrod&layout=compact)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![willianrod's wakatime stats](https://todo-txt-stats.netlify.app/api/wakatime?upload=willianrod&layout=compact)](https://github.com/nextexperience//todo-txt-stats)
 
 * * *
 
@@ -453,11 +453,11 @@ Choose from any of the [default themes](#themes)
 
 -   Top languages
 
-[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/)](https://github.com/nextexperience//todo-txt-stats)
 
 -   WakaTime card
 
-[![willianrod's wakatime stats](https://todo-txt-stats.netlify.app/api/wakatime?upload=willianrod)](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![willianrod's wakatime stats](https://todo-txt-stats.netlify.app/api/wakatime?upload=willianrod)](https://github.com/nextexperience//todo-txt-stats)
 
 * * *
 
@@ -466,10 +466,10 @@ Choose from any of the [default themes](#themes)
 By default, GitHub does not lay out the cards side by side. To do that, you can use this approach:
 
 ```html
-<a href="https://github.com/nextexperience/todo-txt-stats//todo-txt-stats">
+<a href="https://github.com/nextexperience//todo-txt-stats">
   <img align="center" src="https://todo-txt-stats.netlify.app/api/pin/?upload/&" />
 </a>
-<a href="https://github.com/nextexperience/todo-txt-stats//convoychat">
+<a href="https://github.com/nextexperience//convoychat">
   <img align="center" src="https://todo-txt-stats.netlify.app/api/pin/?upload/&repo=convoychat" />
 </a>
 ```
@@ -479,14 +479,14 @@ By default, GitHub does not lay out the cards side by side. To do that, you can 
 #### :film_projector: [Check Out Step By Step Video Tutorial By @codeSTACKr](https://youtu.be/n6d4KHSKqGk?t=107)
 
 > **Warning**
-> If you are on the [hobby (i.e. free)](https://netlify.com/pricing) netlify plan, please make sure you change the `maxDuration` parameter in the [netlify.json](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats/blob/master/netlify.json) file from `30` to `10` (see [#1416](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats/issues/1416#issuecomment-950275476) for more information).
+> If you are on the [hobby (i.e. free)](https://netlify.com/pricing) netlify plan, please make sure you change the `maxDuration` parameter in the [netlify.json](https://github.com/nextexperience//todo-txt-stats/blob/master/netlify.json) file from `30` to `10` (see [#1416](https://github.com/nextexperience//todo-txt-stats/issues/1416#issuecomment-950275476) for more information).
 
 Since the GitHub API only allows 5k requests per hour, my `https://todo-txt-stats.netlify.app/api` could possibly hit the rate limiter. If you host it on your own netlify server, then you do not have to worry about anything. Click on the deploy button to get started!
 
 > **Note**
-> Since [#58](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats/pull/58), we should be able to handle more than 5k requests and have fewer issues with downtime :grin:.
+> Since [#58](https://github.com/nextexperience//todo-txt-stats/pull/58), we should be able to handle more than 5k requests and have fewer issues with downtime :grin:.
 
-[![Deploy to netlify](https://netlify.com/button)](https://netlify.com/import/project?template=https://github.com/nextexperience/todo-txt-stats//todo-txt-stats)
+[![Deploy to netlify](https://netlify.com/button)](https://netlify.com/import/project?template=https://github.com/nextexperience//todo-txt-stats)
 
 <details>
  <summary><b>:hammer_and_wrench: Step-by-step guide on setting up your own netlify instance</b></summary>
@@ -498,7 +498,7 @@ Since the GitHub API only allows 5k requests per hour, my `https://todo-txt-stat
     ![](https://files.catbox.moe/b9oxey.png)
 4.  Sign in to GitHub and allow access to all repositories if prompted.
 5.  Fork this repo.
-6.  After forking the repo, open the [`netlify.json`](https://github.com/nextexperience/todo-txt-stats//todo-txt-stats/blob/master/netlify.json#L5) file and change the `maxDuration` field to `10`.
+6.  After forking the repo, open the [`netlify.json`](https://github.com/nextexperience//todo-txt-stats/blob/master/netlify.json#L5) file and change the `maxDuration` field to `10`.
 7.  Go back to your [netlify dashboard](https://netlify.com/dashboard).
 8.  To import a project, click the `Add New...` button and select the `Project` option.
     ![](https://files.catbox.moe/3n76fh.png)
