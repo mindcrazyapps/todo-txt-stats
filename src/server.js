@@ -13,6 +13,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.set('view engine', 'pug'); //ejs
+//app.set('views', './src/views')
 app.get('/', (req, res) => {
     res.render('index');
 });
