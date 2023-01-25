@@ -48,7 +48,7 @@
 
 </p>
 
-#### Definition 
+## Definition 
 ```
         Header                                     Body
  .-----------------------.   .----------------------------------------------------.
@@ -62,8 +62,8 @@ x (A) 2016-05-20 2016-04-30 measure space for +chapelShelving @chapel due:2016-0
  ' completed
 ```
  
-# Example
-```
+## Example
+```javascript
 const item = new Item('Paint the kitchen @home +reno due:2022-12-01');
 
 console.log(item.contexts());
@@ -111,6 +111,43 @@ interface Task {
 - **api http response(post):** `https://todo-txt-stats.netlify.app/api?upload/`
 ![image](https://user-images.githubusercontent.com/123137817/214711957-e1b33da9-32dc-464b-900d-2999173c3ec1.png)
 
+```javascript
+[
+  {
+    // the original untrimmed content of the line
+    "raw": "x 2014-07-04 (A) 2014-06-19 Document YTD spending on +SocialEvents for @Alex due:2014-08-01",
+    // the trimmed content of the line following the creation date
+    "text": "Document YTD spending on +SocialEvents for @Alex due:2014-08-01",
+    /* projects are found in the `text` field and begin with "+".
+     * Empty when none present */
+    "projects": ["SocialEvents"],
+    /* contexts are found in the `text` field and begin with "@".
+     * Empty when none present */
+    "contexts": ["Alex"],
+    // indicates if the task is marked as completed
+    "complete": true,
+    // ISO 8601 UTC datetime. Null if not present
+    "dateCreated": "2014-06-19T00:00:00.000Z",
+    // ISO 8601 UTC datetime. Null if not present
+    "dateCompleted": "2014-07-04T00:00:00.000Z",
+    /* The upper case A-Z priority. If priority was not
+     * explicitly given, `metadata.pri` will be used if
+     * it's present. Otherwise null
+     */
+    "priority": "A",
+    // Stores data parsed by metadata extensions. Defaults to {}
+    "metadata": {"due": "2014-08-01"},
+    /* In hierarchical mode, contains any direct children
+     * at a higher indentation level
+     */
+    "subtasks": [],
+    /* Indentation level of the task in character columns.
+     * See hierarchical mode for more details
+     */
+    "indentLevel": 2
+  }
+]
+```
 # Features
 
 -   [Todo-txt Stats Card](#github-stats-card)
