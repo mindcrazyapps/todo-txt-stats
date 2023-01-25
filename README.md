@@ -99,7 +99,7 @@ You can pass a query parameter `&hide=` to hide any specific stats with comma-se
 > Options: `&hide=stars,commits,prs,issues,contribs`
 
 ```md
-![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/&hide=contribs,prs)
+![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/&hide=projects,contexts, metadata, data-start, data-due)
 ```
 
 #### Output
@@ -290,7 +290,7 @@ You can provide multiple comma-separated values in the bg_color option to render
 -   `hide_title` - _(boolean)_. Default: `false`.
 -   `layout` - Switch between two available layouts `default` & `compact`. Default: `default`.
 -   `card_width` - Set the card's width manually _(number)_. Default `300`.
--   `langs_count` - Show more languages on the card, between 1-10 _(number)_. Default `5`.
+-   `context_count` - Show more languages on the card, between 1-10 _(number)_. Default `5`.
 -   `exclude_repo` - Exclude specified repositories _(Comma-separated values)_. Default: `[] (blank array)`.
 -   `custom_title` - Sets a custom title for the card _(string)_. Default `Most Used Languages`.
 -   `disable_animations` - Disables all animations in the card _(boolean)_. Default: `false`.
@@ -308,7 +308,7 @@ You can provide multiple comma-separated values in the bg_color option to render
 -   `hide_progress` - Hides the progress bar and percentage _(boolean)_. Default `false`.
 -   `custom_title` - Sets a custom title for the card _(string)_. Default `Wakatime Stats`.
 -   `layout` - Switch between two available layouts `default` & `compact`.  Default `default`.
--   `langs_count` - Limit the number of languages on the card, defaults to all reported languages _(number)_.
+-   `context_count` - Limit the number of languages on the card, defaults to all reported languages _(number)_.
 -   `api_domain` - Set a custom API domain for the card, e.g. to use services like [Hakatime](https://github.com/mujx/hakatime) or [Wakapi](https://github.com/muety/wakapi) _(string)_. Default `Waka API`.
 -   `range` – Request a range different from your WakaTime default, e.g. `last_7_days`. See [WakaTime API docs](https://wakatime.com/developers#stats) for a list of available options. _(YYYY-MM, last_7_days, last_30_days, last_6_months, last_year, or all_time)_. Default `all_time`.
 
@@ -368,15 +368,15 @@ You can use the `&exclude_repo=repo1,repo2` parameter to exclude individual repo
 You can use `&hide=language1,language2` parameter to hide individual languages.
 
 ```md
-[![Top Langs](https:/.netlify.app/api/top-langs/?upload/&hide=javascript,html)](https://github.com/nextexperience/)
+[![Top Langs](https:/.netlify.app/api/top-langs/?upload/&hide=contexts, projects)](https://github.com/nextexperience/)
 ```
 
 ### Show more languages
 
-You can use the `&langs_count=` option to increase or decrease the number of languages shown on the card. Valid values are integers between 1 and 10 (inclusive), and the default is 5.
+You can use the `&context_count=` option to increase or decrease the number of languages shown on the card. Valid values are integers between 1 and 10 (inclusive), and the default is 5.
 
 ```md
-[![Top Langs](https:/.netlify.app/api/top-langs/?upload/&langs_count=8)](https://github.com/nextexperience/)
+[![Top Langs](https:/.netlify.app/api/top-langs/?upload/&context_count=8)](https://github.com/nextexperience/)
 ```
 
 ### Compact Language Card Layout
