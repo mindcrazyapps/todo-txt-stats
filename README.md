@@ -51,15 +51,15 @@
 # Screenshot
 
 *img 1*
-- **api http post:** `https:/todo-txt-stats.netlify.app/api?upload/`
+- **api http post:** `https://todo-txt-stats.netlify.app/api?upload/`
 ![image](https://user-images.githubusercontent.com/123137817/214712029-f32f59d6-3cfa-4203-af81-4ab75448a333.png)
 
 *img 2*
-- **api http response(post):** `https:/todo-txt-stats.netlify.app/api?upload/`
+- **api http response(post):** `https://todo-txt-stats.netlify.app/api?upload/`
 ![image](https://user-images.githubusercontent.com/123137817/214712540-f1c4210c-cad4-441b-b586-b57c3ae57f7b.png)
 
 *img 3*
-- **api http response(post):** `https:/todo-txt-stats.netlify.app/api?upload/`
+- **api http response(post):** `https://todo-txt-stats.netlify.app/api?upload/`
 ![image](https://user-images.githubusercontent.com/123137817/214711957-e1b33da9-32dc-464b-900d-2999173c3ec1.png)
 
 # Features
@@ -86,7 +86,7 @@ Copy-paste this into your markdown content, and that is it. Simple!
 Change the `?upload=` value to your filepath in upload.
 
 ```md
-[![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/)](https://github.com/nextexperience/)
+[![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/)](https://github.com/nextexperience/)
 ```
 
 > **Note**
@@ -99,7 +99,7 @@ You can pass a query parameter `&hide=` to hide any specific stats with comma-se
 > Options: `&hide=stars,commits,prs,issues,contribs`
 
 ```md
-![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/&hide=projects,contexts, metadata, data-start, data-due)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/&hide=projects,contexts, metadata, data-start, data-due)
 ```
 
 #### Output
@@ -117,7 +117,7 @@ You can add the count of all your private contributions to the total commits cou
 > Options: `&count_private=true`
 
 ```md
-![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/&count_private=true)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/&count_private=true)
 ```
 
 ### Showing icons
@@ -125,7 +125,7 @@ You can add the count of all your private contributions to the total commits cou
 To enable icons, you can pass `show_icons=true` in the query param, like so:
 
 ```md
-![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true)
 ```
 
 ### Themes
@@ -135,7 +135,7 @@ With inbuilt themes, you can customize the look of the card without doing any [m
 Use `&theme=THEME_NAME` parameter like so :
 
 ```md
-![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=radical)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=radical)
 ```
 
 #### All inbuilt themes
@@ -148,8 +148,8 @@ You can look at a preview for [all available themes](./themes/README.md) or chec
 
 #### Responsive Card Theme
 
-[![NextExperience Todo stats-Dark](https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/nextexperience/#gh-dark-mode-only)
-[![NextExperience Todo stats-Light](https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/nextexperience/#gh-light-mode-only)
+[![NextExperience Todo stats-Dark](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/nextexperience/#gh-dark-mode-only)
+[![NextExperience Todo stats-Light](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/nextexperience/#gh-light-mode-only)
 
 Since GitHub will re-upload the cards and serve them from their [CDN](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-anonymized-urls), we can not infer the browser/GitHub theme on the server side. There are, however, four methods you can use to create dynamics themes on the client side.
 
@@ -158,13 +158,13 @@ Since GitHub will re-upload the cards and serve them from their [CDN](https://do
 We have included a `transparent` theme that has a transparent background. This theme is optimized to look good on GitHub's dark and light default themes. You can enable this theme using the `&theme=transparent` parameter like so:
 
 ```md
-![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=transparent)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=transparent)
 ```
 
 <details>
 <summary>:eyes: Show example</summary>
 
-![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=transparent)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=transparent)
 
 </details>
 
@@ -173,13 +173,13 @@ We have included a `transparent` theme that has a transparent background. This t
 You can use the `bg_color` parameter to make any of [the available themes](./themes/README.md) transparent. This is done by setting the `bg_color` to a colour with a transparent alpha channel (i.e. `bg_color=00000000`):
 
 ```md
-![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true&bg_color=00000000)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&bg_color=00000000)
 ```
 
 <details>
 <summary>:eyes: Show example</summary>
 
-![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true&bg_color=00000000)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&bg_color=00000000)
 
 </details>
 
@@ -188,15 +188,15 @@ You can use the `bg_color` parameter to make any of [the available themes](./the
 You can use [GitHub's theme context](https://github.blog/changelog/2021-11-24-specify-theme-context-for-images-in-markdown/) tags to switch the theme based on the user GitHub theme automatically. This is done by appending `#gh-dark-mode-only` or `#gh-light-mode-only` to the end of an image URL. This tag will define whether the image specified in the markdown is only shown to viewers using a light or a dark GitHub theme:
 
 ```md
-[![NextExperience Todo stats-Dark](https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/nextexperience/#gh-dark-mode-only)
-[![NextExperience Todo stats-Light](https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/nextexperience/#gh-light-mode-only)
+[![NextExperience Todo stats-Dark](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/nextexperience/#gh-dark-mode-only)
+[![NextExperience Todo stats-Light](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/nextexperience/#gh-light-mode-only)
 ```
 
 <details>
 <summary>:eyes: Show example</summary>
 
-[![NextExperience Todo stats-Dark](https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/nextexperience/#gh-dark-mode-only)
-[![NextExperience Todo stats-Light](https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/nextexperience/#gh-light-mode-only)
+[![NextExperience Todo stats-Dark](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/nextexperience/#gh-dark-mode-only)
+[![NextExperience Todo stats-Light](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/nextexperience/#gh-light-mode-only)
 
 </details>
 
@@ -207,14 +207,14 @@ You can use [GitHub's new media feature](https://github.blog/changelog/2022-05-1
 ```html
 <picture>
 <source 
-  srcset="https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=dark"
+  srcset="https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=dark"
   media="(prefers-color-scheme: dark)"
 />
 <source
-  srcset="https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true"
+  srcset="https://todo-txt-stats.netlify.app/api?upload/&show_icons=true"
   media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
 />
-<img src="https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true" />
+<img src="https://todo-txt-stats.netlify.app/api?upload/&show_icons=true" />
 </picture>
 ```
 
@@ -223,14 +223,14 @@ You can use [GitHub's new media feature](https://github.blog/changelog/2022-05-1
 
 <picture>
 <source 
-  srcset="https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=dark"
+  srcset="https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=dark"
   media="(prefers-color-scheme: dark)"
 />
 <source
-  srcset="https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true"
+  srcset="https://todo-txt-stats.netlify.app/api?upload/&show_icons=true"
   media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
 />
-<img src="https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true" />
+<img src="https://todo-txt-stats.netlify.app/api?upload/&show_icons=true" />
 </picture>
 
 </details>
@@ -422,33 +422,33 @@ Change the `?upload=` value to your [Wakatime](https://wakatime.com) upload.
 
 -   Default
 
-![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/)
 
 -   Hiding specific stats
 
-![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/&hide=contribs,issues)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/&hide=contribs,issues)
 
 -   Showing icons
 
-![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/&hide=issues&show_icons=true)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/&hide=issues&show_icons=true)
 
 -   Customize Border Color
 
-![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/&border_color=2e4058)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/&border_color=2e4058)
 
 -   Include All Commits
 
-![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/&include_all_commits=true)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/&include_all_commits=true)
 
 -   Themes
 
 Choose from any of the [default themes](#themes)
 
-![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=radical)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/&show_icons=true&theme=radical)
 
 -   Gradient
 
-![NextExperience Todo stats](https:/todo-txt-stats.netlify.app/api?upload/&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api?upload/&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
 
 -   Customizing stats card
 
