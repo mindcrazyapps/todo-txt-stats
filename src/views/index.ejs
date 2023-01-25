@@ -21,19 +21,15 @@
 </head>
 <body>
     <div class="container">
-        <form action="/upload" method="post" enctype="multipart/form-data">
-            <input type="file" name="files"
-            class="btn btn-primary" id="file"
-            multiple>
+        <form action="/upload" method="post" enctype="multipart/form-data" id="uploadForm" ref="uploadForm">
+            <input type="file" name="files" class="btn btn-primary" id="file" multiple>
             <button class="btn btn-primary" type="submit" style="border-radius: 4px;">
                 Upload
             </button>
         </form>
     </div>
-    <script type="text/javascript">
-        document.getElementById("file").value = "";
-    </script>
-<div class="container">
+    <script type="text/javascript"> document.getElementById("file").value = ""; </script>
+    <div class="container">
     <canvas id="render-todo-txt-stats"></canvas>
   </div>  
   <script>
@@ -57,19 +53,5 @@
       }
     });
   </script>
-<!--
-<html>
-	<body>
-		<form ref='uploadForm' 
-			id='uploadForm' 
-			action='/upload' 
-			method='post' 
-			encType="multipart/form-data">
-				<input type="file" name="sampleFile" />
-				<input type='submit' value='Upload!' />
-		</form>		
-	</body>
-</html>
--->
 </body>
 </html>

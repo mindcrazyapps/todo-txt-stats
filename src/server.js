@@ -1,12 +1,45 @@
 const express = require('express');
 const multer  = require('multer');
 const fs  = require('fs');
+const parser = require("todotxt-parser");
 const { parse } = require('@lggruspe/todo-txt-parser');
 const { readFileSync } = require('fs')
-//const todo = readFileSync('../app/uploads/todo.txt', 'utf8').trim()
-//const tasks = parse(todo);
-//const parser = require("todotxt-parser");
-//const tasks1 = parser.relaxed("x 2014-07-04 (A) 2014-06-19 Document YTD spending on +SocialEvents for @Alex due:2014-08-01");
+
+//requiring path and fs modules
+const path = require('path');
+//joining path of directory 
+const directoryPath = path.join(__dirname, '../data');
+//passsing directoryPath and callback function
+fs.readdir(directoryPath, function (err, files) {
+    //handling error
+    if (err) {
+        return console.log('Unable to scan directory: ' + err);
+    } 
+    console.log("directoryPath", directoryPath);
+    //listing all files using forEach
+    var filenamepath;
+    files.forEach(function (file) {
+        // Do whatever you want to do with the file
+        filenamepath= file;
+        if (filenamepath.endsWith("txt")){
+            const filepathnew = directoryPath+"/"+filenamepath;
+            fs.readFile(filepathnew, {encoding: 'UTF-8'}, (err, data) => {
+                const todo = readFileSync(filepathnew, 'utf8').trim() // '../app/uploads/todo.txt'
+                if (err) { // or if (err) throw err;
+                    console.error(err);
+                    return;
+                  }
+                //console.log(data);
+                console.log(parser.relaxed(data));
+                //console.log(parse(todo));
+              });
+            //console.log(filenamepath); 
+        }
+        else {
+          return null; //console.log("out extension:", filenamepath); 
+        }
+    });
+});
 
 const app = express();
 
