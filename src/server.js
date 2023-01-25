@@ -1,6 +1,7 @@
 //requiring path and fs modules etc
 const express = require('express');
 const multer  = require('multer');
+const ejs = require('ejs');
 const fs  = require('fs');
 const parser = require("todotxt-parser");
 const { parse } = require('@lggruspe/todo-txt-parser');
@@ -51,11 +52,11 @@ app.post('/upload', function (req, res, next) {
                             if (err) { // or if (err) throw err;
                                 console.error(err);
                                 return;
-                              } //console.log(data); //dataFileUpload = parser.relaxed(data); //return dataFileUpload; //return res.render('index', {dataFileUpload: parser.relaxed(data), tagline: tagline}); //console.log(parser.relaxed(data));  //console.log(parse(todo));
-                            // return parser.relaxed(data);
+                              } //return res.render('index', {dataFileUpload: parser.relaxed(data), tagline: tagline}); 
+                              //console.log(parser.relaxed(data));  //console.log(parse(todo));
                             //res.render('index', {dataFileUpload: parser.relaxed(data), tagline: tagline});
                             res.end("Upload completed."+JSON.stringify(parser.relaxed(data)));
-                          }); //console.log(filenamepath); 
+                          }); //console.log(filenamepath);   //console.log(parse(todo));
                     }
                     else {
                       return null; //console.log("out extension:", filenamepath); 
