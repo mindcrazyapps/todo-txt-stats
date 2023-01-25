@@ -54,15 +54,15 @@
 # Screenshot
 
 *img 1*
-**Post:** `https:/todo-txt-stats.netlify.app/api?upload/`
+- **api http post:** `https:/todo-txt-stats.netlify.app/api?upload/`
 ![image](https://user-images.githubusercontent.com/123137817/214712029-f32f59d6-3cfa-4203-af81-4ab75448a333.png)
 
 *img 2*
-**response(post):** `https:/todo-txt-stats.netlify.app/api?upload/`
+- **api http response(post):** `https:/todo-txt-stats.netlify.app/api?upload/`
 ![image](https://user-images.githubusercontent.com/123137817/214712540-f1c4210c-cad4-441b-b586-b57c3ae57f7b.png)
 
 *img 3*
-**response(post):** `https:/todo-txt-stats.netlify.app/api?upload/`
+- **api http response(post):** `https:/todo-txt-stats.netlify.app/api?upload/`
 ![image](https://user-images.githubusercontent.com/123137817/214711957-e1b33da9-32dc-464b-900d-2999173c3ec1.png)
 
 # Features
