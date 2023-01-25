@@ -17,14 +17,14 @@ app.get('/', (req, res) => {
 });
 
 const storage = multer.diskStorage({
-    destination: function (req, file, callback) {
-        const dir = './app/uploads';
+    destination: (req, file, callback) => {
+        const dir = '../data/';
         if (!fs.existsSync(dir)){
             fs.mkdirSync(dir);
         }
         callback(null, dir);
     },
-    filename: function (req, file, callback) {
+    filename: (req, file, callback) => {
         callback(null, file.originalname);
     }
 });
