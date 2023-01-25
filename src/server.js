@@ -61,7 +61,7 @@ app.post('/upload', function (req, res, next) {
                                 console.error(err);
                                 return;
                               } 
-                            res.render('index', {ejsData: "file content"+JSON.stringify(parser.relaxed(data))})
+                            res.render('index', {ejsData: JSON.stringify(parser.relaxed(data))})
                             //res.render('index', { dataFileUpload:  });
                           }); //console.log(parse(todo)); //res.end("Upload completed."+JSON.stringify(parser.relaxed(data)));
                     }
