@@ -1,41 +1,34 @@
-const express = require('express');
-const fileUpload = require('express-fileupload');
-const app = express();
+var express = require('express');
+var multer  = require('multer');
+var fs  = require('fs');
 
-const PORT = 8000;
-app.use('/form', express.static(__dirname + '/index.html'));
+var app = express();
+app.set('view engine', 'ejs');
 
-// default options
-app.use(fileUpload());
-
-app.get('/ping', function(req, res) {
-  res.send('pong');
+app.get('/', (req, res) => {
+    res.render('index');
 });
 
-app.post('/upload', function(req, res) {
-  let sampleFile;
-  let uploadPath;
-
-  if (!req.files || Object.keys(req.files).length === 0) {
-    res.status(400).send('No files were uploaded.');
-    return;
-  }
-
-  console.log('req.files >>>', req.files); // eslint-disable-line
-
-  sampleFile = req.files.sampleFile;
-
-  uploadPath = __dirname + '/uploads/' + sampleFile.name;
-
-  sampleFile.mv(uploadPath, function(err) {
-    if (err) {
-      return res.status(500).send(err);
+var storage = multer.diskStorage({
+    destination: function (req, file, callback) {
+        var dir = './uploads';
+        if (!fs.existsSync(dir)){
+            fs.mkdirSync(dir);
+        }
+        callback(null, dir);
+    },
+    filename: function (req, file, callback) {
+        callback(null, file.originalname);
     }
-
-    res.send('File uploaded to ' + uploadPath);
-  });
 });
+var upload = multer({storage: storage}).array('files', 12);
+app.post('/upload', function (req, res, next) {
+    upload(req, res, function (err) {
+        if (err) {
+            return res.end("Something went wrong:(");
+        }
+        res.end("Upload completed.");
+    });
+})
 
-app.listen(PORT, function() {
-  console.log('Express server listening on port ', PORT); // eslint-disable-line
-});
+app.listen(3000);
