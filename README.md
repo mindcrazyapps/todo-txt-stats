@@ -48,6 +48,40 @@
 
 </p>
 
+#### Definition 
+```
+        Header                                     Body
+ .-----------------------.   .----------------------------------------------------.
+'                         ' '                                                      '
+x (A) 2016-05-20 2016-04-30 measure space for +chapelShelving @chapel due:2016-05-30
+|  |  '----.---' '----.---'                   '------.------' '--.--' '------.-----'
+|  |   completed   created                        project     context    extension
+|  |
+|   ' priority
+|
+ ' completed
+```
+ 
+# Example
+```
+const item = new Item('Paint the kitchen @home +reno due:2022-12-01');
+
+console.log(item.contexts());
+// ['home']
+
+item.setExtension('color', 'red');
+console.log(item.extensions());
+// [{key: 'due', value: '2022-12-01'}, {key: 'color', value: 'red'}]
+
+item.setCreated('2022-10-19');
+console.log(item.toString());
+// 2022-10-19 Paint the kitchen @home +reno due:2022-12-01 color:red
+
+item.setBody('Paint the kitchen color:red @home +reno due:2022-12-01')
+console.log(item.toString());
+// 2022-10-19 Paint the kitchen color:red @home +reno due:2022-12-01
+```
+
 # Interface
 
 ```typescript
