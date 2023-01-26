@@ -14,14 +14,7 @@ include header.pug
             button.btn.btn-primary(type='submit' style='border-radius: 4px;')
               | Upload
       #nav-profile.tab-pane.fade(role='tabpanel' aria-labelledby='nav-profile-tab' tabindex='0' data-toggle="tab")
-        p=dataFileUpload 
-        script.
-          //console.log(dataFileUpload);
-          $('button[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-            var target = $(e.target).attr("href") // activated tab
-            alert(target);
-            });
-          //new JsonViewer({container: document.body, data: fileContent, theme: 'light', expand: true});
+        textarea#resultFileUpload=dataFileUpload 
       #nav-contact.tab-pane.fade(role='tabpanel' aria-labelledby='nav-contact-tab' tabindex='0' data-toggle="tab")
         .container
           .chart-container

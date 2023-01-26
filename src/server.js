@@ -38,18 +38,18 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage: storage}).array('files', 12);
 
-app.post('/upload', function (req, res, next) {
-    upload(req, res, function (err) {
+app.post('/upload',  (req, res, next) => {
+    upload(req, res, (err) => {
         if (err) {
             return res.end("Something went wrong:(");
         }
         else {
-            fs.readdir(directoryPath, function (err, files) { //passsing directoryPath and callback function
+            fs.readdir(directoryPath, (err, files) => { //passsing directoryPath and callback function
                 if (err) {//handling error
                     return console.log('Unable to scan directory: ' + err);
                 } //console.log("directoryPath", directoryPath); //listing all files using forEach
                 var filenamepath;
-                files.forEach(function (file) {
+                files.forEach( (file) => {
                     // Do whatever you want to do with the file
                     filenamepath= file;
                     if (filenamepath.endsWith("txt")){
