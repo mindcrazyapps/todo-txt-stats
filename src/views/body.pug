@@ -14,7 +14,10 @@ include header.pug
             button.btn.btn-primary(type='submit' style='border-radius: 4px;')
               | Upload
       #nav-profile.tab-pane.fade(role='tabpanel' aria-labelledby='nav-profile-tab' tabindex='0' data-toggle="tab")
-        textarea#resultFileUpload=dataFileUpload 
+        textarea#resultFileUpload=dataFileUpload
+        script.
+          const txter = $("#resultFileUpload").val(); //console.log( JSON.parse(txt));//JSON.stringify(txt);
+          new JsonViewer({container: resultFileUpload, data: txter, theme: 'light', expand: true});
       #nav-contact.tab-pane.fade(role='tabpanel' aria-labelledby='nav-contact-tab' tabindex='0' data-toggle="tab")
         .container
           .chart-container

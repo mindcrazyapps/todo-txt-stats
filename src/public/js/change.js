@@ -10,6 +10,5 @@
 //    console.log(txt);
 //});
 
-const txt = $("#resultFileUpload").val();
-console.log( JSON.parse(txt));//JSON.stringify(txt);
+const txt = $("#resultFileUpload").val(); //console.log( JSON.parse(txt));//JSON.stringify(txt);
 new JsonViewer({container: document.body, data: txt, theme: 'light', expand: true});
