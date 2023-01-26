@@ -436,10 +436,10 @@ The top contexts card shows a GitHub user's most frequently used top language.
 
 Copy-paste this code into your readme and change the links.
 
-Endpoint: `api/top-langs?upload/`
+Endpoint: `api/contexts?upload/`
 
 ```md
-[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/)](https://github.com/nextexperience/)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/contexts/?upload/)](https://github.com/nextexperience/)
 ```
 
 ### Exclude individual repositories
@@ -447,7 +447,7 @@ Endpoint: `api/top-langs?upload/`
 You can use the `&exclude_repo=repo1,repo2` parameter to exclude individual repositories.
 
 ```md
-[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&exclude_,filepath.github.io)](https://github.com/nextexperience/)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/contexts/?upload/&exclude_,filepath.github.io)](https://github.com/nextexperience/)
 ```
 
 ### Hide individual contexts
@@ -455,7 +455,7 @@ You can use the `&exclude_repo=repo1,repo2` parameter to exclude individual repo
 You can use `&hide=language1,language2` parameter to hide individual contexts.
 
 ```md
-[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&hide=contexts, projects)](https://github.com/nextexperience/)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/contexts/?upload/&hide=contexts, projects)](https://github.com/nextexperience/)
 ```
 
 ### Show more contexts
@@ -463,7 +463,7 @@ You can use `&hide=language1,language2` parameter to hide individual contexts.
 You can use the `&context_count=` option to increase or decrease the number of contexts shown on the card. Valid values are integers between 1 and 10 (inclusive), and the default is 5.
 
 ```md
-[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&context_count=8)](https://github.com/nextexperience/)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/contexts/?upload/&context_count=8)](https://github.com/nextexperience/)
 ```
 
 ### Compact Context Card Layout
@@ -471,16 +471,16 @@ You can use the `&context_count=` option to increase or decrease the number of c
 You can use the `&layout=compact` option to change the card design.
 
 ```md
-[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&layout=compact)](https://github.com/nextexperience/)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/contexts/?upload/&layout=compact)](https://github.com/nextexperience/)
 ```
 
 ### Demo
 
-[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/)](https://github.com/nextexperience/)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/contexts/?upload/)](https://github.com/nextexperience/)
 
 -   Compact layout
 
-[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&layout=compact)](https://github.com/nextexperience/)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/contexts/?upload/&layout=compact)](https://github.com/nextexperience/)
 
 # Wakatime Week Stats
 
@@ -551,7 +551,7 @@ Choose from any of the [default themes](#themes)
 
 -   Top contexts
 
-[![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/)](https://github.com/nextexperience/)
+[![Top Langs](https://todo-txt-stats.netlify.app/api/contexts/?upload/)](https://github.com/nextexperience/)
 
 -   WakaTime card
 
