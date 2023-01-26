@@ -182,7 +182,7 @@ Change the `?upload=` value to your filepath in upload.
 
 You can pass a query parameter `&hide=` to hide any specific stats with comma-separated values.
 
-> Options: `&hide= completed, priority, completion, creation, description, projects, contexts, pairs`
+> Options: `&hide=completed,priority,completion,creation,description,projects,contexts,pairs`
 
 ```md
 ![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api/upload/&hide=projects,contexts, metadata, data-start, data-due)
@@ -512,7 +512,7 @@ Change the `?upload=` value to your [Wakatime](https://wakatime.com) upload.
 
 -   Hiding specific stats
 
-![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api/upload/&hide=completed,priority, completion, creation, description, projects, contexts, pairs)
+![NextExperience Todo stats](https://todo-txt-stats.netlify.app/api/upload/&hide=completed,priority, completion,creation,description,projects,contexts,pairs)
 
 -   Showing icons
 
