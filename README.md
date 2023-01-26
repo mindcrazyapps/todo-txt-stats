@@ -153,7 +153,7 @@ console.log(item.toString());
 
 -   [Todo-txt Stats Card](#github-stats-card)
 -   [Todo-txt Extra Pins](#github-extra-pins)
--   [Top Languages Card](#top-languages-card)
+-   [Top contexts Card](#contexts-card)
 -   [Wakatime Week Stats](#wakatime-week-stats)
 -   [Themes](#themes)
     -   [Responsive Card Theme](#responsive-card-theme)
@@ -371,15 +371,15 @@ You can provide multiple comma-separated values in the bg_color option to render
 
 -   `show_owner` - Show the repo's owner name _(boolean)_. Default: `false`.
 
-#### Language Card Exclusive Options
+#### Context Card Exclusive Options
 
--   `hide` - Hide the languages specified from the card _(Comma-separated values)_. Default: `[] (blank array)`.
+-   `hide` - Hide the contexts specified from the card _(Comma-separated values)_. Default: `[] (blank array)`.
 -   `hide_title` - _(boolean)_. Default: `false`.
 -   `layout` - Switch between two available layouts `default` & `compact`. Default: `default`.
 -   `card_width` - Set the card's width manually _(number)_. Default `300`.
--   `context_count` - Show more languages on the card, between 1-10 _(number)_. Default `5`.
+-   `context_count` - Show more contexts on the card, between 1-10 _(number)_. Default `5`.
 -   `exclude_repo` - Exclude specified repositories _(Comma-separated values)_. Default: `[] (blank array)`.
--   `custom_title` - Sets a custom title for the card _(string)_. Default `Most Used Languages`.
+-   `custom_title` - Sets a custom title for the card _(string)_. Default `Most Used Contexts`.
 -   `disable_animations` - Disables all animations in the card _(boolean)_. Default: `false`.
 
 > **Warning**
@@ -389,13 +389,13 @@ You can provide multiple comma-separated values in the bg_color option to render
 
 #### Wakatime Card Exclusive Options
 
--   `hide` - Hide the languages specified from the card _(Comma-separated values)_. Default: `[] (blank array)`.
+-   `hide` - Hide the contexts specified from the card _(Comma-separated values)_. Default: `[] (blank array)`.
 -   `hide_title` - _(boolean)_. Default `false`.
 -   `line_height` - Sets the line height between text _(number)_. Default `25`.
 -   `hide_progress` - Hides the progress bar and percentage _(boolean)_. Default `false`.
 -   `custom_title` - Sets a custom title for the card _(string)_. Default `Wakatime Stats`.
 -   `layout` - Switch between two available layouts `default` & `compact`.  Default `default`.
--   `context_count` - Limit the number of languages on the card, defaults to all reported languages _(number)_.
+-   `context_count` - Limit the number of contexts on the card, defaults to all reported contexts _(number)_.
 -   `api_domain` - Set a custom API domain for the card, e.g. to use services like [Hakatime](https://github.com/mujx/hakatime) or [Wakapi](https://github.com/muety/wakapi) _(string)_. Default `Waka API`.
 -   `range` – Request a range different from your WakaTime default, e.g. `last_7_days`. See [WakaTime API docs](https://wakatime.com/developers#stats) for a list of available options. _(YYYY-MM, last_7_days, last_30_days, last_6_months, last_year, or all_time)_. Default `all_time`.
 
@@ -425,12 +425,12 @@ Use [show_owner](#customization) variable to include the repo's owner upload
 
 [![Readme Card](https://todo-txt-stats.netlify.app/api/pin/?upload/&&show_owner=true)](https://github.com/nextexperience/)
 
-# Top Languages Card
+# Top Contexts Card
 
-The top languages card shows a GitHub user's most frequently used top language.
+The top contexts card shows a GitHub user's most frequently used top language.
 
 > **Note**
-> Top Languages does not indicate my skill level or anything like that; it's a GitHub metric to determine which languages have the most code on GitHub. It is a new feature of todo-txt-stats.
+> Top Contexts does not indicate my skill level or anything like that; it's a GitHub metric to determine which contexts have the most code on GitHub. It is a new feature of todo-txt-stats.
 
 ### Usage
 
@@ -450,23 +450,23 @@ You can use the `&exclude_repo=repo1,repo2` parameter to exclude individual repo
 [![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&exclude_,filepath.github.io)](https://github.com/nextexperience/)
 ```
 
-### Hide individual languages
+### Hide individual contexts
 
-You can use `&hide=language1,language2` parameter to hide individual languages.
+You can use `&hide=language1,language2` parameter to hide individual contexts.
 
 ```md
 [![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&hide=contexts, projects)](https://github.com/nextexperience/)
 ```
 
-### Show more languages
+### Show more contexts
 
-You can use the `&context_count=` option to increase or decrease the number of languages shown on the card. Valid values are integers between 1 and 10 (inclusive), and the default is 5.
+You can use the `&context_count=` option to increase or decrease the number of contexts shown on the card. Valid values are integers between 1 and 10 (inclusive), and the default is 5.
 
 ```md
 [![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/&context_count=8)](https://github.com/nextexperience/)
 ```
 
-### Compact Language Card Layout
+### Compact Context Card Layout
 
 You can use the `&layout=compact` option to change the card design.
 
@@ -549,7 +549,7 @@ Choose from any of the [default themes](#themes)
 
 ![Customized Card](https://todo-txt-stats.netlify.app/api/pin?upload/&&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
 
--   Top languages
+-   Top contexts
 
 [![Top Langs](https://todo-txt-stats.netlify.app/api/top-langs/?upload/)](https://github.com/nextexperience/)
 
