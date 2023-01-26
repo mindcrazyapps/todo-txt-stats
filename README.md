@@ -61,7 +61,22 @@ x (A) 2016-05-20 2016-04-30 measure space for +chapelShelving @chapel due:2016-0
 |
  ' completed
 ```
- 
+
+# Interface
+
+```typescript
+interface Task {
+  completed?: boolean
+  priority?: string
+  completion?: string
+  creation?: string
+  description?: string
+  projects?: Array<string>
+  contexts?: Array<string>
+  pairs?: Array<[string, string]>
+}
+```
+
 ## Example
 ```javascript
 const item = new Item('Paint the kitchen @home +reno due:2022-12-01');
@@ -80,21 +95,6 @@ console.log(item.toString());
 item.setBody('Paint the kitchen color:red @home +reno due:2022-12-01')
 console.log(item.toString());
 // 2022-10-19 Paint the kitchen color:red @home +reno due:2022-12-01
-```
-
-# Interface
-
-```typescript
-interface Task {
-  completed?: boolean
-  priority?: string
-  completion?: string
-  creation?: string
-  description?: string
-  projects?: Array<string>
-  contexts?: Array<string>
-  pairs?: Array<[string, string]>
-}
 ```
 
 # Screenshot
