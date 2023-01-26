@@ -62,7 +62,7 @@ x (A) 2016-05-20 2016-04-30 measure space for +chapelShelving @chapel due:2016-0
  ' completed
 ```
 
-# Interface
+## API&Interface
 
 ```typescript
 interface Task {
@@ -97,7 +97,7 @@ console.log(item.toString());
 // 2022-10-19 Paint the kitchen color:red @home +reno due:2022-12-01
 ```
 
-# Screenshot
+## Screenshot
 
 *img 1*
 - **api http post:** `https://todo-txt-stats.netlify.app/api/upload/`
@@ -148,7 +148,8 @@ console.log(item.toString());
   }
 ]
 ```
-# Features
+
+## Features
 
 -   [Todo-txt Stats Card](#github-stats-card)
 -   [Todo-txt Extra Pins](#github-extra-pins)
@@ -165,7 +166,7 @@ console.log(item.toString());
 -   [Deploy Yourself](#deploy-on-your-own-netlify-instance)
     -   [Keep your fork up to date](#keep-your-fork-up-to-date)
 
-# Todo-txt Stats
+## Todo-txt Stats
 
 Copy-paste this into your markdown content, and that is it. Simple!
 
