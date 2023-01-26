@@ -21,3 +21,9 @@ package-lock.json
 ./package-lock.json
 yarn.lock
 ./yarn.lock
+package-lock
+yarn.lock 
+yarn.lock/ 
+package-lock.json/
+./yarn.lock 
+./package-lock.json 
