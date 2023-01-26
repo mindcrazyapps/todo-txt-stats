@@ -7,17 +7,22 @@ include header.pug
         button#nav-profile-tab.nav-link(data-bs-toggle='tab' data-bs-target='#nav-profile' type='button' role='tab' aria-controls='nav-profile' aria-selected='false') File upload content
         button#nav-contact-tab.nav-link(data-bs-toggle='tab' data-bs-target='#nav-contact' type='button' role='tab' aria-controls='nav-contact' aria-selected='false') Chart-js
     #nav-tabContent.tab-content
-      #nav-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='nav-home-tab' tabindex='0')
+      #nav-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='nav-home-tab' tabindex='0' data-toggle="tab")
         .container
           form#uploadForm(action='/upload' method='post' enctype='multipart/form-data' ref='uploadForm')
             input#file.btn.btn-primary(type='file' name='files' multiple='')
             button.btn.btn-primary(type='submit' style='border-radius: 4px;')
               | Upload
-      #nav-profile.tab-pane.fade(role='tabpanel' aria-labelledby='nav-profile-tab' tabindex='0')
-        //- p=dataFileUpload 
-      script.
-        new JsonViewer({container: document.body, data: dataFileUpload, theme: 'light', expand: true});
-      #nav-contact.tab-pane.fade(role='tabpanel' aria-labelledby='nav-contact-tab' tabindex='0')
+      #nav-profile.tab-pane.fade(role='tabpanel' aria-labelledby='nav-profile-tab' tabindex='0' data-toggle="tab")
+        p=dataFileUpload 
+        script.
+          //console.log(dataFileUpload);
+          $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            var target = $(e.target).attr("href") // activated tab
+            alert(target);
+            });
+          //new JsonViewer({container: document.body, data: fileContent, theme: 'light', expand: true});
+      #nav-contact.tab-pane.fade(role='tabpanel' aria-labelledby='nav-contact-tab' tabindex='0' data-toggle="tab")
         .container
           .chart-container
             canvas#render-todo-txt-stats

@@ -6,7 +6,8 @@
  * @desc This lib is for render a pretty json data on browser
  */
 
-require('./style.css');
+//require('./style.css');
+//import './style.css';
 
 const toString = Object.prototype.toString;
 
@@ -184,7 +185,7 @@ JsonViewer.prototype.forEach = function (obj, fn) {
     }
 }
 
-module.exports = JsonViewer;
+//module.exports = JsonViewer;
 
 
 
